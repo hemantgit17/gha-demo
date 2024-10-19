@@ -17,7 +17,7 @@ jobs:
             project_id: vocal-etching-439120-s6
       - name: Deploy via GCS
         run: |
-          echo ${{ secrets.sa_email }}
+          echo ${{ service_account_email }}
           #gsutil rm gs://githubaction-bkt/*
           gsutil cp -r * gs://githubaction-bkt/
     
