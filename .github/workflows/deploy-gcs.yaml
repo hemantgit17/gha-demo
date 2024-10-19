@@ -10,7 +10,7 @@ jobs:
 
       steps:
       - uses: actions/checkout@v2
-      - uses: google-github-actions/setup-gcloud@v0
+      - uses: google-github-actions/setup-gcloud@v2
         with:
             service_account_email: ${{secrets.sa_email}}
             service_account_key: ${{secrets.sa_cred}}
