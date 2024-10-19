@@ -17,6 +17,6 @@ jobs:
             project_id: vocal-etching-439120-s6
       - name: Deploy via GCS
         run: |
-          gsutil -m rm -rd gs://githubaction-bkt/*
-          gsutil -m cp -r * gs://githubaction-bkt/
+          gsutil rm gs://githubaction-bkt/*
+          gsutil cp -r * gs://githubaction-bkt/
     
